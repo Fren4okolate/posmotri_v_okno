@@ -218,7 +218,7 @@ fieldset {
 }
 
 .content__list-item {
-  margin-bottom: 34px;
+  margin-bottom: 32px;
 }
 
 .content__list-item:nth-last-child(-n+2) {
