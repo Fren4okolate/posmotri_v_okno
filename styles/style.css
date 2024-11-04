@@ -45,7 +45,6 @@ ol {
   max-width: 1140px;
   display: flex;
   gap: 30px;
-  overflow-y: hidden;
 }
 
 .result {
@@ -72,9 +71,9 @@ fieldset {
 .search-form {
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  gap: 40px;
   align-items: flex-start;
-  margin: 0 0 1px 1px;
+  margin: 0 0 4px 0;
 }
 
 .search-form__fieldset-title {
@@ -182,6 +181,7 @@ fieldset {
 .search-form__submit-button {
   width: 194px;
   align-self: flex-end;
+  margin-left: 3px;
 }
 
 .more-button {
@@ -201,7 +201,7 @@ fieldset {
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
   font-size: 75px;
-  line-height: 94%;
+  line-height: 70.5px;
 }
 
 .content__accent {
@@ -218,11 +218,15 @@ fieldset {
 }
 
 .content__list-item {
+  margin-bottom: 30px;
+}
+
+.content__list-item:nth-last-child(2) {
   margin-bottom: 32px;
 }
 
-.content__list-item:nth-last-child(-n+2) {
-  margin-bottom: 0;
+.content__list-item:last-child { 
+  margin-bottom: 0; 
 }
 
 .content__card-link {
@@ -260,7 +264,7 @@ fieldset {
 }
 
 .content__video-card-description-container {
-  width: 180px;
+  width: 200px;
 }
 
 .content__video-card-title {
@@ -270,16 +274,22 @@ fieldset {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  line-height: 30px;
+  font-weight: 700;
 }
 
 .content__video-card-description {
-  line-height: 90%;
+  line-height: 16.2px;
+  font-weight: 400;
+  font-size: 18px;
   width: 200px;
   text-wrap: wrap;
 }
 
 .content__video-card-thumbnail {
-  width: 194px;
+  object-fit: cover; 
+  overflow: hidden;  
+  object-position: center;
 }
 
 .visually-hidden {
